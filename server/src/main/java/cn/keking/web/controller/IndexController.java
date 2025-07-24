@@ -44,10 +44,10 @@ public class IndexController {
         return "/main/index";
     }
 
-    @GetMapping("/L6t1iigOAM")
+    @GetMapping("/L6t1iigOAM.txt")
     public @ResponseBody String serveTextFile() throws IOException {
         // 从 resources/static/ 下读取文件
-        ClassPathResource resource = new ClassPathResource("static/L6t1iigOAM.txt");
+        ClassPathResource resource = new ClassPathResource("/static/L6t1iigOAM.txt");
 
         // 使用 InputStream + BufferedReader 读取文件内容（兼容 Java 8）
         try (InputStream is = resource.getInputStream();
